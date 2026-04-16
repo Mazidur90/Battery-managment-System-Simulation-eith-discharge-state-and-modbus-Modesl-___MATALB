@@ -36,7 +36,7 @@ The current implementation is centered on a **Kokam 31 Ah lithium-ion cell** and
 - Energy, power, loss, and estimated range analytics
 - Fault severity classification and supervisor mode logic
 - Communication-style frame generation for telemetry outputs
-- GitHub-ready diagrams, banner artwork, and dummy MATLAB figure visuals
+- GitHub-ready diagrams, banner artwork, and professional simulation figure visuals
 
 ## Visual Overview
 
@@ -46,10 +46,10 @@ The current implementation is centered on a **Kokam 31 Ah lithium-ion cell** and
   <img src="docs/assets/repo-banner.svg" alt="Repository banner" width="100%">
 </p>
 
-### Dummy MATLAB Figure
+### Simulation Figure Overview
 
 <p align="center">
-  <img src="docs/assets/matlab-dummy-figure.svg" alt="Dummy MATLAB figure" width="88%">
+  <img src="docs/assets/matlab-figure.svg" alt="Simulation figure overview" width="88%">
 </p>
 
 ### Architecture Overview
@@ -64,10 +64,10 @@ The current implementation is centered on a **Kokam 31 Ah lithium-ion cell** and
   <img src="docs/assets/launch-workflow.svg" alt="Launch workflow diagram" width="95%">
 </p>
 
-### Representative Result Graphs
+### Performance Results Overview
 
 <p align="center">
-  <img src="docs/assets/results-graphs.svg" alt="Representative results graphs" width="95%">
+  <img src="docs/assets/results-graphs.svg" alt="Performance results overview" width="95%">
 </p>
 
 ## System Architecture
@@ -150,7 +150,7 @@ Battery mangement System/
 |  \- assets/
 |     |- architecture-overview.svg
 |     |- launch-workflow.svg
-|     |- matlab-dummy-figure.svg
+|     |- matlab-figure.svg
 |     |- repo-banner.svg
 |     \- results-graphs.svg
 |- main/
@@ -235,7 +235,7 @@ Repository visuals are stored in `docs/assets/`:
 - `architecture-overview.svg`
 - `launch-workflow.svg`
 - `results-graphs.svg`
-- `matlab-dummy-figure.svg`
+- `matlab-figure.svg`
 
 ## Professional Summary
 
@@ -253,7 +253,7 @@ This project can be presented as a professional MATLAB and Simulink BMS reposito
 ## Notes
 
 - Current sign convention is positive for discharge.
-- The included MATLAB-style figure and logo-style artwork are dummy visuals created for repository presentation and are not official MathWorks branding.
+- The included figure and logo-style artwork are custom repository visuals and are not official MathWorks branding.
 - The Simulink model is generated from code so the repository stays text-reviewable.
 - This repository is a professional development baseline, not a production-certified automotive BMS.
 

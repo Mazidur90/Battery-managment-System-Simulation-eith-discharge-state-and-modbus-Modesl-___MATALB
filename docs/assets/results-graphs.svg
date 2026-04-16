@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="980" viewBox="0 0 1440 980">
   <rect width="1440" height="980" fill="#eef5fb"/>
-  <text x="58" y="66" font-size="38" font-family="Segoe UI, Arial, sans-serif" font-weight="700" fill="#12344d">Simulation Results Preview</text>
-  <text x="58" y="102" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#5b7588">MATLAB-style plotting panels for repository presentation</text>
+  <text x="58" y="66" font-size="38" font-family="Segoe UI, Arial, sans-serif" font-weight="700" fill="#12344d">Battery Management System Performance Results</text>
+  <text x="58" y="102" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#5b7588">Simulation summaries for current supervision, thermal behavior, estimation, and diagnostics</text>
 
   <g transform="translate(58,142)">
     <rect width="630" height="320" rx="18" fill="#ffffff" stroke="#d6e4ef"/>
-    <text x="22" y="36" font-size="23" font-family="Segoe UI, Arial, sans-serif" fill="#173b54">Current Command and Safe Current</text>
+    <text x="22" y="36" font-size="23" font-family="Segoe UI, Arial, sans-serif" fill="#173b54">Discharge Current Command and Protection Limit</text>
     <line x1="72" y1="54" x2="72" y2="270" stroke="#8aa8bc" stroke-width="2"/>
     <line x1="72" y1="270" x2="592" y2="270" stroke="#8aa8bc" stroke-width="2"/>
     <g stroke="#eaf1f6">
@@ -20,7 +20,7 @@
 
   <g transform="translate(752,142)">
     <rect width="630" height="320" rx="18" fill="#ffffff" stroke="#d6e4ef"/>
-    <text x="22" y="36" font-size="23" font-family="Segoe UI, Arial, sans-serif" fill="#173b54">Voltage and Temperature Monitoring</text>
+    <text x="22" y="36" font-size="23" font-family="Segoe UI, Arial, sans-serif" fill="#173b54">Voltage and Temperature Supervision</text>
     <line x1="72" y1="54" x2="72" y2="270" stroke="#8aa8bc" stroke-width="2"/>
     <line x1="72" y1="270" x2="592" y2="270" stroke="#8aa8bc" stroke-width="2"/>
     <g stroke="#eaf1f6">
@@ -36,7 +36,7 @@
 
   <g transform="translate(58,534)">
     <rect width="630" height="320" rx="18" fill="#ffffff" stroke="#d6e4ef"/>
-    <text x="22" y="36" font-size="23" font-family="Segoe UI, Arial, sans-serif" fill="#173b54">SOC, SOH and SOP Estimation</text>
+    <text x="22" y="36" font-size="23" font-family="Segoe UI, Arial, sans-serif" fill="#173b54">SOC, SOH and Power Capability Estimation</text>
     <line x1="72" y1="54" x2="72" y2="270" stroke="#8aa8bc" stroke-width="2"/>
     <line x1="72" y1="270" x2="592" y2="270" stroke="#8aa8bc" stroke-width="2"/>
     <g stroke="#eaf1f6">
@@ -52,7 +52,7 @@
 
   <g transform="translate(752,534)">
     <rect width="630" height="320" rx="18" fill="#ffffff" stroke="#d6e4ef"/>
-    <text x="22" y="36" font-size="23" font-family="Segoe UI, Arial, sans-serif" fill="#173b54">Health, Severity and Communication</text>
+    <text x="22" y="36" font-size="23" font-family="Segoe UI, Arial, sans-serif" fill="#173b54">Health Assessment, Severity and Communications</text>
     <line x1="72" y1="54" x2="72" y2="270" stroke="#8aa8bc" stroke-width="2"/>
     <line x1="72" y1="270" x2="592" y2="270" stroke="#8aa8bc" stroke-width="2"/>
     <g stroke="#eaf1f6">
