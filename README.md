@@ -1,192 +1,116 @@
 # Battery Management System in MATLAB and Simulink
 
 <p align="center">
-  <img src="docs/assets/repo-banner.svg" alt="Battery Management System MATLAB and Simulink banner" width="100%">
+  <img src="docs/assets/repo-banner.svg" alt="Battery Management System banner" width="100%">
 </p>
 
 <p align="center">
-  A GitHub-ready Battery Management System project with MATLAB simulation, generated Simulink architecture, protection logic, estimation, thermal supervision, health scoring, and communication-style telemetry.
+  A professional MATLAB and Simulink Battery Management System repository for lithium-ion battery simulation, protection, supervisory control, thermal monitoring, energy analytics, health scoring, and communication-oriented telemetry.
 </p>
 
 <p align="center">
   <img alt="MATLAB" src="https://img.shields.io/badge/MATLAB-Project-orange">
   <img alt="Simulink" src="https://img.shields.io/badge/Simulink-Generated-blue">
+  <img alt="BMS" src="https://img.shields.io/badge/Domain-Battery%20Management%20System-0b7285">
   <img alt="License" src="https://img.shields.io/badge/License-MIT-green">
-  <img alt="BMS" src="https://img.shields.io/badge/Focus-Battery%20Management%20System-0b7285">
 </p>
 
-## Overview
+## Description
 
-This repository packages an end-to-end **Battery Management System (BMS)** workflow for **MATLAB and Simulink**. It started from a discharge-protection tutorial concept and has been expanded into a larger project structure with:
+This repository delivers a complete **Battery Management System (BMS)** development baseline built with **MATLAB** and **Simulink**. It combines a modular MATLAB simulation workflow with a code-generated Simulink architecture so the project can serve both:
 
-- plant simulation
-- protection and supervisory logic
-- SOC, SOH, and SOP estimation
-- thermal management
-- energy and range estimation
-- health scoring
-- CAN-style communication payload generation
-- a code-generated Simulink model for system-level exploration
+- research and academic battery-system studies
+- rapid prototyping of protection and supervisory logic
+- documentation-ready project presentation on GitHub
+- extension into larger EV or stationary energy-storage BMS programs
 
-The current baseline uses a **Kokam 31 Ah lithium-ion cell** and a discharge-oriented operating scenario.
+The current implementation is centered on a **Kokam 31 Ah lithium-ion cell** and emphasizes a discharge-focused operating scenario. On top of the core plant and safety logic, the repository includes dynamic derating, state estimation, thermal supervision, health scoring, and CAN-style telemetry encoding.
 
-## Repository Preview
+## Repository Highlights
+
+- MATLAB simulation path with reusable subsystem functions
+- Simulink model generation from `main/build_simulink_model.m`
+- Protection logic for under-voltage, over-current, and thermal events
+- SOC, SOH, and SOP estimation paths
+- Core and surface thermal modeling
+- Energy, power, loss, and estimated range analytics
+- Fault severity classification and supervisor mode logic
+- Communication-style frame generation for telemetry outputs
+- GitHub-ready diagrams, banner artwork, and dummy MATLAB figure visuals
+
+## Visual Overview
+
+### Repository Banner
+
+<p align="center">
+  <img src="docs/assets/repo-banner.svg" alt="Repository banner" width="100%">
+</p>
 
 ### Dummy MATLAB Figure
 
-This repository includes a **dummy MATLAB-style figure asset** for GitHub presentation and documentation previews.
-
 <p align="center">
-  <img src="docs/assets/matlab-dummy-figure.svg" alt="Dummy MATLAB figure preview" width="88%">
+  <img src="docs/assets/matlab-dummy-figure.svg" alt="Dummy MATLAB figure" width="88%">
 </p>
 
-### Architecture Diagram
+### Architecture Overview
 
 <p align="center">
-  <img src="docs/assets/architecture-overview.svg" alt="BMS architecture overview" width="95%">
+  <img src="docs/assets/architecture-overview.svg" alt="Architecture overview" width="95%">
 </p>
 
-### Representative Graphs
+### Launch Workflow Diagram
 
 <p align="center">
-  <img src="docs/assets/results-graphs.svg" alt="Representative BMS graphs" width="95%">
+  <img src="docs/assets/launch-workflow.svg" alt="Launch workflow diagram" width="95%">
 </p>
 
-## Features
+### Representative Result Graphs
 
-- NEDC-like discharge current profile
-- Single-cell equivalent-circuit battery model
-- Under-voltage, over-current, and thermal protection
-- Discharge trigger and safe current gating
-- Dynamic current derating
-- Core and surface thermal states
-- Pack power, loss power, and remaining energy tracking
-- Estimated range and throughput accumulation
-- State-of-power estimation
-- Health score with penalties
-- Fault severity classification
-- Supervisor mode management
-- Communication frame encoding with raw telemetry fields
-- Programmatic Simulink model generation
-
-## Project Structure
-
-```text
-Battery mangement System/
-├── config/
-│   └── defaultPackConfig.m
-├── docs/
-│   └── assets/
-│       ├── architecture-overview.svg
-│       ├── matlab-dummy-figure.svg
-│       ├── repo-banner.svg
-│       └── results-graphs.svg
-├── main/
-│   ├── build_simulink_model.m
-│   └── run_bms_demo.m
-├── src/
-│   ├── communication/
-│   ├── control/
-│   ├── estimators/
-│   ├── models/
-│   ├── safety/
-│   ├── utils/
-│   └── visualization/
-├── tests/
-│   └── smoke_test.m
-├── CONTRIBUTING.md
-├── LICENSE
-├── README.md
-└── .gitignore
-```
-
-## Kokam Cell Baseline
-
-| Parameter | Value |
-|---|---:|
-| Capacity | 31 Ah |
-| Nominal Voltage | 3.7 V |
-| Maximum Voltage | 4.2 V |
-| Cutoff Voltage | 2.7 V |
-| Continuous Discharge Current | 155 A |
-| Peak Discharge Current | 310 A |
-| Discharge Temperature Range | -20 C to 60 C |
+<p align="center">
+  <img src="docs/assets/results-graphs.svg" alt="Representative results graphs" width="95%">
+</p>
 
 ## System Architecture
 
-### Functional Flow
+### Functional Layers
 
 ```mermaid
 flowchart LR
-    A[Current Profile] --> B[Discharge Only]
-    B --> C[Cell Model]
-    C --> D[Battery Supervisor]
-    C --> E[Thermal Manager]
-    C --> F[Energy Estimator]
-    D --> G[Health Monitor]
-    D --> H[Comm Encoder]
-    E --> G
-    F --> G
-    G --> I[Logs and Plots]
-    H --> I
+    A[Drive Cycle Input] --> B[Battery Plant Model]
+    B --> C[Measurement Layer]
+    C --> D[Estimation Layer]
+    C --> E[Protection Layer]
+    D --> F[Supervisor Layer]
+    E --> F
+    F --> G[Thermal Management]
+    F --> H[Energy and Power Analytics]
+    F --> I[Health and Diagnostics]
+    I --> J[Communication Encoder]
+    J --> K[Plots Logs and Integration Outputs]
 ```
 
-### MATLAB Simulation Path
+### MATLAB Execution Flow
 
 ```mermaid
 flowchart TD
     A[run_bms_demo.m] --> B[runBmsSimulation]
-    B --> C[initBmsState]
-    B --> D[defaultDriveCycle]
-    B --> E[bmsStep loop]
-    E --> F[packPlantStep]
-    E --> G[measurePack]
-    E --> H[Estimators]
-    E --> I[Safety]
-    E --> J[Control]
-    E --> K[Diagnostics and Comm]
-    E --> L[appendBmsLog]
-    A --> M[plotBmsResults]
+    B --> C[defaultPackConfig]
+    B --> D[initBmsState]
+    B --> E[defaultDriveCycle]
+    B --> F[bmsStep loop]
+    F --> G[packPlantStep]
+    F --> H[measurePack]
+    F --> I[State Estimators]
+    F --> J[Safety Evaluation]
+    F --> K[Control and Derating]
+    F --> L[Health Comm and Diagnostics]
+    F --> M[appendBmsLog]
+    A --> N[plotBmsResults]
 ```
 
-## Main MATLAB Files
+### Generated Simulink Blocks
 
-Core entry points:
-
-- [run_bms_demo.m](/d:/Battery%20mangement%20System/main/run_bms_demo.m)
-- [build_simulink_model.m](/d:/Battery%20mangement%20System/main/build_simulink_model.m)
-- [defaultPackConfig.m](/d:/Battery%20mangement%20System/config/defaultPackConfig.m)
-
-Simulation core:
-
-- [runBmsSimulation.m](/d:/Battery%20mangement%20System/src/runBmsSimulation.m)
-- [bmsStep.m](/d:/Battery%20mangement%20System/src/bmsStep.m)
-- [packPlantStep.m](/d:/Battery%20mangement%20System/src/models/packPlantStep.m)
-- [measurePack.m](/d:/Battery%20mangement%20System/src/models/measurePack.m)
-
-Major subsystems:
-
-- Control: [src/control](/d:/Battery%20mangement%20System/src/control)
-- Estimation: [src/estimators](/d:/Battery%20mangement%20System/src/estimators)
-- Safety: [src/safety](/d:/Battery%20mangement%20System/src/safety)
-- Communication: [src/communication](/d:/Battery%20mangement%20System/src/communication)
-- Visualization: [src/visualization](/d:/Battery%20mangement%20System/src/visualization)
-
-## Simulink Model
-
-The repository stores the **generator script**, not a fixed `.slx` file. Run the script below to create the model:
-
-```matlab
-run("main/build_simulink_model.m");
-```
-
-It generates a Simulink model named:
-
-```text
-bms_discharge_model.slx
-```
-
-Generated subsystems include:
+The generated model currently includes the following high-level functional blocks:
 
 - `CellModel`
 - `BatterySupervisor`
@@ -196,66 +120,143 @@ Generated subsystems include:
 - `CommEncoder`
 - `SystemScope`
 
-## Quick Start
+## Launching the Project
 
-Run the MATLAB demo:
+### 1. Run the MATLAB simulation
 
 ```matlab
 run("main/run_bms_demo.m");
 ```
 
-Generate the Simulink model:
+### 2. Generate the Simulink model
 
 ```matlab
 run("main/build_simulink_model.m");
 ```
 
-Run the smoke test:
+### 3. Run the smoke test
 
 ```matlab
 run("tests/smoke_test.m");
 ```
 
-## Expected Outputs
+## Project Structure
 
-The MATLAB demo and plotting stack are designed to expose:
+```text
+Battery mangement System/
+|- config/
+|  \- defaultPackConfig.m
+|- docs/
+|  \- assets/
+|     |- architecture-overview.svg
+|     |- launch-workflow.svg
+|     |- matlab-dummy-figure.svg
+|     |- repo-banner.svg
+|     \- results-graphs.svg
+|- main/
+|  |- build_simulink_model.m
+|  \- run_bms_demo.m
+|- src/
+|  |- communication/
+|  |- control/
+|  |- estimators/
+|  |- models/
+|  |- safety/
+|  |- utils/
+|  \- visualization/
+|- tests/
+|  \- smoke_test.m
+|- CONTRIBUTING.md
+|- LICENSE
+|- README.md
+\- .gitignore
+```
 
-- pack voltage and current
-- current limit and derate behavior
-- SOC, SOH, and SOP
-- core, surface, and blended pack temperature
-- remaining energy and estimated range
+## Core Files
+
+### Entry Points
+
+- `main/run_bms_demo.m`
+- `main/build_simulink_model.m`
+- `tests/smoke_test.m`
+
+### Configuration
+
+- `config/defaultPackConfig.m`
+
+### Simulation Core
+
+- `src/runBmsSimulation.m`
+- `src/bmsStep.m`
+- `src/initBmsState.m`
+- `src/models/packPlantStep.m`
+- `src/models/measurePack.m`
+
+### Major Subsystems
+
+- `src/control/`
+- `src/estimators/`
+- `src/safety/`
+- `src/communication/`
+- `src/utils/`
+- `src/visualization/`
+
+## Cell Baseline
+
+| Parameter | Value |
+|---|---:|
+| Cell Type | Kokam Lithium-Ion |
+| Capacity | 31 Ah |
+| Nominal Voltage | 3.7 V |
+| Maximum Voltage | 4.2 V |
+| Cutoff Voltage | 2.7 V |
+| Continuous Discharge Current | 155 A |
+| Peak Discharge Current | 310 A |
+| Discharge Temperature Range | -20 C to 60 C |
+
+## Outputs and Analytics
+
+The MATLAB workflow and generated diagrams are designed to expose:
+
+- pack voltage and current behavior
+- current limit and derating behavior
+- SOC, SOH, and SOP trends
+- core, surface, and blended thermal states
+- remaining energy, throughput, and estimated range
 - health score and penalty contributors
 - supervisor mode and fault severity
-- communication-style raw telemetry fields
+- communication-oriented raw telemetry values
 
-## Graphs Included in the README
+## Documentation Assets
 
-The repository includes GitHub-friendly static SVG visualizations:
+Repository visuals are stored in `docs/assets/`:
 
-- [repo-banner.svg](docs/assets/repo-banner.svg)
-- [architecture-overview.svg](docs/assets/architecture-overview.svg)
-- [results-graphs.svg](docs/assets/results-graphs.svg)
-- [matlab-dummy-figure.svg](docs/assets/matlab-dummy-figure.svg)
+- `repo-banner.svg`
+- `architecture-overview.svg`
+- `launch-workflow.svg`
+- `results-graphs.svg`
+- `matlab-dummy-figure.svg`
 
-These are intentionally lightweight and portable so the README renders nicely on GitHub without requiring generated screenshots.
+## Professional Summary
+
+This project can be presented as a professional MATLAB and Simulink BMS repository for battery-system modeling, supervisory protection, thermal and energy analytics, and communication-oriented software prototyping. It is structured to be readable on GitHub, extensible in MATLAB, and suitable as a foundation for more advanced battery-pack and EV control work.
 
 ## Roadmap
 
 - Add charging path and charger state machine
-- Upgrade to multi-cell pack balancing
-- Add advanced estimation such as EKF/UKF
-- Introduce CAN database style message definitions
-- Add fault replay scenarios and report export
-- Add hardware-in-the-loop friendly interfaces
+- Extend to multi-cell or multi-module pack balancing
+- Add EKF or UKF based state estimation
+- Add richer communication groups and diagnostics reporting
+- Add fault injection scenarios and result export
+- Add HIL-friendly interfaces and report automation
 
 ## Notes
 
 - Current sign convention is positive for discharge.
-- The MATLAB figure and logo artwork included here are **dummy repository visuals**, not official MathWorks branding.
-- The Simulink model is generated from code to keep the repository reviewable in text form.
-- This is a development and learning baseline, not a production-certified automotive BMS.
+- The included MATLAB-style figure and logo-style artwork are dummy visuals created for repository presentation and are not official MathWorks branding.
+- The Simulink model is generated from code so the repository stays text-reviewable.
+- This repository is a professional development baseline, not a production-certified automotive BMS.
 
 ## License
 
-This project is released under the [MIT License](LICENSE).
+Released under the [MIT License](LICENSE).

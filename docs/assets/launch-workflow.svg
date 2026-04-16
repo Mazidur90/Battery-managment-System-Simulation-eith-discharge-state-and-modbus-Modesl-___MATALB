@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="540" viewBox="0 0 1400 540">
+  <rect width="1400" height="540" fill="#f7fbff"/>
+  <text x="60" y="70" font-size="38" font-family="Segoe UI, Arial, sans-serif" font-weight="700" fill="#10324d">Project Launch Workflow</text>
+  <text x="60" y="105" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#5c768a">Typical GitHub to MATLAB to Simulink execution path</text>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="70" y="180" width="210" height="120" rx="22" fill="#0b3351"/>
+    <text x="126" y="230" font-size="30" fill="#ffffff" font-weight="700">Clone Repo</text>
+    <text x="118" y="263" font-size="18" fill="#d8eefb">Open project folder</text>
+
+    <rect x="340" y="180" width="220" height="120" rx="22" fill="#1768ac"/>
+    <text x="393" y="228" font-size="30" fill="#ffffff" font-weight="700">Open MATLAB</text>
+    <text x="386" y="262" font-size="18" fill="#eaf6ff">Set repo as current path</text>
+
+    <rect x="620" y="180" width="240" height="120" rx="22" fill="#2c7da0"/>
+    <text x="668" y="228" font-size="30" fill="#ffffff" font-weight="700">Run Demo</text>
+    <text x="653" y="262" font-size="18" fill="#eef8ff">Execute run_bms_demo.m</text>
+
+    <rect x="920" y="180" width="260" height="120" rx="22" fill="#3aa5a1"/>
+    <text x="968" y="228" font-size="30" fill="#ffffff" font-weight="700">Build Model</text>
+    <text x="945" y="262" font-size="18" fill="#eefdfb">Generate bms_discharge_model.slx</text>
+
+    <rect x="1240" y="180" width="100" height="120" rx="22" fill="#f28f3b"/>
+    <text x="1262" y="228" font-size="30" fill="#ffffff" font-weight="700">Use</text>
+    <text x="1255" y="262" font-size="18" fill="#fff4ea">Analyze</text>
+  </g>
+  <g stroke="#64839b" stroke-width="8" fill="none" stroke-linecap="round">
+    <path d="M280 240 L340 240"/>
+    <path d="M560 240 L620 240"/>
+    <path d="M860 240 L920 240"/>
+    <path d="M1180 240 L1240 240"/>
+  </g>
+  <g font-family="Consolas, 'Courier New', monospace" font-size="18" fill="#23445b">
+    <text x="353" y="372">run("main/run_bms_demo.m")</text>
+    <text x="898" y="402">run("main/build_simulink_model.m")</text>
+    <text x="623" y="432">run("tests/smoke_test.m")</text>
+  </g>
+</svg>
