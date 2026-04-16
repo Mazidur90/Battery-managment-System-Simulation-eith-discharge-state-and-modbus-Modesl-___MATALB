@@ -1,0 +1,22 @@
+# MATLAB
+*.asv
+*.autosave
+*.fig
+*.mlx~
+slprj/
+work/
+
+# Simulink
+*.slxc
+*.autosave
+*.mldatx
+
+# Generated models
+*.slx.r*
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+

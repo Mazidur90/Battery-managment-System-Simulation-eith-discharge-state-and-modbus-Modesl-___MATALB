@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+  <rect width="1400" height="760" fill="#f6fbff"/>
+  <text x="60" y="70" font-size="38" font-family="Segoe UI, Arial, sans-serif" font-weight="700" fill="#10324d">BMS Architecture Overview</text>
+  <text x="60" y="105" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#4d6a80">Generated MATLAB / Simulink project layers</text>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="70" y="160" width="210" height="110" rx="18" fill="#0b3351"/>
+    <text x="105" y="210" font-size="28" fill="#ffffff" font-weight="700">Drive Cycle</text>
+    <text x="98" y="243" font-size="18" fill="#cae8f9">NEDC-like discharge profile</text>
+
+    <rect x="340" y="160" width="240" height="110" rx="18" fill="#1768ac"/>
+    <text x="405" y="208" font-size="30" fill="#ffffff" font-weight="700">Cell Model</text>
+    <text x="382" y="242" font-size="18" fill="#e4f3ff">Voltage, loss, SOC, core/surface temp</text>
+
+    <rect x="650" y="120" width="280" height="120" rx="18" fill="#2c7da0"/>
+    <text x="700" y="173" font-size="29" fill="#ffffff" font-weight="700">Battery Supervisor</text>
+    <text x="682" y="208" font-size="18" fill="#eef8ff">Fault logic, modes, derating, triggers</text>
+
+    <rect x="650" y="280" width="280" height="110" rx="18" fill="#3aa5a1"/>
+    <text x="710" y="328" font-size="29" fill="#ffffff" font-weight="700">Thermal Manager</text>
+    <text x="700" y="360" font-size="18" fill="#eefdfb">Cooling level and thermal score</text>
+
+    <rect x="650" y="430" width="280" height="110" rx="18" fill="#6c9a1f"/>
+    <text x="715" y="477" font-size="29" fill="#ffffff" font-weight="700">Energy Layer</text>
+    <text x="685" y="510" font-size="18" fill="#eff9db">Power, range, remaining energy, SOP</text>
+
+    <rect x="1010" y="170" width="260" height="110" rx="18" fill="#f28f3b"/>
+    <text x="1062" y="220" font-size="29" fill="#ffffff" font-weight="700">Health Monitor</text>
+    <text x="1060" y="252" font-size="18" fill="#fff4ea">Score, penalties, degradation view</text>
+
+    <rect x="1010" y="340" width="260" height="110" rx="18" fill="#b63f69"/>
+    <text x="1078" y="388" font-size="29" fill="#ffffff" font-weight="700">Comm Encoder</text>
+    <text x="1061" y="422" font-size="18" fill="#ffeaf1">CAN-like telemetry frame outputs</text>
+
+    <rect x="1010" y="520" width="260" height="110" rx="18" fill="#4b5563"/>
+    <text x="1093" y="569" font-size="29" fill="#ffffff" font-weight="700">Scope / Logs</text>
+    <text x="1056" y="602" font-size="18" fill="#eff2f7">Simulation traces and repo visuals</text>
+  </g>
+  <g stroke="#587a93" stroke-width="8" fill="none" stroke-linecap="round">
+    <path d="M280 215 L340 215"/>
+    <path d="M580 215 L650 180"/>
+    <path d="M580 215 L650 335"/>
+    <path d="M580 215 L650 485"/>
+    <path d="M930 180 L1010 225"/>
+    <path d="M930 485 L1010 575"/>
+    <path d="M930 335 L1010 395"/>
+    <path d="M930 485 L1010 395"/>
+  </g>
+</svg>
