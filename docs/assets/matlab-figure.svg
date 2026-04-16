@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="820" viewBox="0 0 1280 820">
+  <rect width="1280" height="820" fill="#edf4fa"/>
+  <rect x="48" y="38" width="1184" height="744" rx="22" fill="#ffffff" stroke="#d3e2ee"/>
+  <rect x="48" y="38" width="1184" height="56" rx="22" fill="#dfeaf2"/>
+  <circle cx="88" cy="66" r="10" fill="#ff6b6b"/>
+  <circle cx="118" cy="66" r="10" fill="#ffd166"/>
+  <circle cx="148" cy="66" r="10" fill="#4cc17a"/>
+  <text x="500" y="73" font-size="24" font-family="Segoe UI, Arial, sans-serif" fill="#2a4c64">MATLAB Figure - BMS Simulation Results</text>
+
+  <g transform="translate(96,126)">
+    <rect width="500" height="270" fill="#ffffff" stroke="#d8e6f0"/>
+    <text x="18" y="28" font-size="22" font-family="Segoe UI, Arial, sans-serif" fill="#193a52">Pack Current and Limit</text>
+    <line x1="62" y1="40" x2="62" y2="228" stroke="#8aa9bf" stroke-width="2"/>
+    <line x1="62" y1="228" x2="462" y2="228" stroke="#8aa9bf" stroke-width="2"/>
+    <g stroke="#e7f0f6">
+      <line x1="62" y1="190" x2="462" y2="190"/>
+      <line x1="62" y1="152" x2="462" y2="152"/>
+      <line x1="62" y1="114" x2="462" y2="114"/>
+      <line x1="62" y1="76" x2="462" y2="76"/>
+    </g>
+    <polyline points="62,218 102,204 142,184 182,176 222,164 262,174 302,146 342,154 382,124 422,140 462,166" fill="none" stroke="#0072BD" stroke-width="4" stroke-linecap="round"/>
+    <polyline points="62,168 102,168 142,168 182,168 222,168 262,170 302,176 342,182 382,188 422,194 462,194" fill="none" stroke="#D95319" stroke-width="4" stroke-dasharray="10 8" stroke-linecap="round"/>
+    <rect x="330" y="52" width="116" height="52" rx="8" fill="#fbfdff" stroke="#d6e4ef"/>
+    <line x1="346" y1="70" x2="380" y2="70" stroke="#0072BD" stroke-width="4"/>
+    <text x="388" y="75" font-size="14" font-family="Segoe UI, Arial, sans-serif" fill="#31566f">Current</text>
+    <line x1="346" y1="90" x2="380" y2="90" stroke="#D95319" stroke-width="4" stroke-dasharray="8 6"/>
+    <text x="388" y="95" font-size="14" font-family="Segoe UI, Arial, sans-serif" fill="#31566f">Limit</text>
+  </g>
+
+  <g transform="translate(676,126)">
+    <rect width="500" height="270" fill="#ffffff" stroke="#d8e6f0"/>
+    <text x="18" y="28" font-size="22" font-family="Segoe UI, Arial, sans-serif" fill="#193a52">SOC, SOH and SOP</text>
+    <line x1="62" y1="40" x2="62" y2="228" stroke="#8aa9bf" stroke-width="2"/>
+    <line x1="62" y1="228" x2="462" y2="228" stroke="#8aa9bf" stroke-width="2"/>
+    <g stroke="#e7f0f6">
+      <line x1="62" y1="190" x2="462" y2="190"/>
+      <line x1="62" y1="152" x2="462" y2="152"/>
+      <line x1="62" y1="114" x2="462" y2="114"/>
+      <line x1="62" y1="76" x2="462" y2="76"/>
+    </g>
+    <polyline points="62,88 102,92 142,98 182,105 222,114 262,125 302,138 342,150 382,162 422,175 462,188" fill="none" stroke="#0072BD" stroke-width="4" stroke-linecap="round"/>
+    <polyline points="62,74 102,75 142,77 182,80 222,83 262,86 302,90 342,95 382,100 422,104 462,110" fill="none" stroke="#77AC30" stroke-width="4" stroke-linecap="round"/>
+    <polyline points="62,150 102,150 142,151 182,153 222,155 262,159 302,163 342,168 382,173 422,178 462,184" fill="none" stroke="#A2142F" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(96,456)">
+    <rect width="500" height="270" fill="#ffffff" stroke="#d8e6f0"/>
+    <text x="18" y="28" font-size="22" font-family="Segoe UI, Arial, sans-serif" fill="#193a52">Thermal States</text>
+    <line x1="62" y1="40" x2="62" y2="228" stroke="#8aa9bf" stroke-width="2"/>
+    <line x1="62" y1="228" x2="462" y2="228" stroke="#8aa9bf" stroke-width="2"/>
+    <g stroke="#e7f0f6">
+      <line x1="62" y1="190" x2="462" y2="190"/>
+      <line x1="62" y1="152" x2="462" y2="152"/>
+      <line x1="62" y1="114" x2="462" y2="114"/>
+      <line x1="62" y1="76" x2="462" y2="76"/>
+    </g>
+    <polyline points="62,196 102,184 142,170 182,156 222,144 262,130 302,120 342,112 382,106 422,101 462,96" fill="none" stroke="#D95319" stroke-width="4" stroke-linecap="round"/>
+    <polyline points="62,206 102,198 142,186 182,174 222,162 262,150 302,142 342,136 382,130 422,126 462,122" fill="none" stroke="#0072BD" stroke-width="4" stroke-linecap="round"/>
+    <polyline points="62,214 102,207 142,196 182,186 222,176 262,165 302,158 342,152 382,147 422,143 462,140" fill="none" stroke="#EDB120" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(676,456)">
+    <rect width="500" height="270" fill="#ffffff" stroke="#d8e6f0"/>
+    <text x="18" y="28" font-size="22" font-family="Segoe UI, Arial, sans-serif" fill="#193a52">Health, Severity and Telemetry</text>
+    <line x1="62" y1="40" x2="62" y2="228" stroke="#8aa9bf" stroke-width="2"/>
+    <line x1="62" y1="228" x2="462" y2="228" stroke="#8aa9bf" stroke-width="2"/>
+    <g stroke="#e7f0f6">
+      <line x1="62" y1="190" x2="462" y2="190"/>
+      <line x1="62" y1="152" x2="462" y2="152"/>
+      <line x1="62" y1="114" x2="462" y2="114"/>
+      <line x1="62" y1="76" x2="462" y2="76"/>
+    </g>
+    <polyline points="62,86 102,89 142,93 182,99 222,105 262,112 302,118 342,124 382,131 422,139 462,148" fill="none" stroke="#4DBEEE" stroke-width="4" stroke-linecap="round"/>
+    <polyline points="62,210 102,210 142,210 182,188 222,188 262,166 302,166 342,144 382,144 422,126 462,126" fill="none" stroke="#A2142F" stroke-width="4" stroke-dasharray="10 8" stroke-linecap="round"/>
+    <polyline points="62,160 102,159 142,158 182,157 222,155 262,154 302,152 342,151 382,149 422,148 462,146" fill="none" stroke="#7E2F8E" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>
